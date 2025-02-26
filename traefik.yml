@@ -1,0 +1,11 @@
+api:
+  dashboard: true # pour activer un tableau de bord
+
+providers:
+  docker:
+    network: network_web # réseau de discussion entre les conteneurs et traefik
+    exposedByDefault: false # n'active pas les conteneurs par défaut sur le web
+
+entryPoints:
+  web:
+    address: ':80'
